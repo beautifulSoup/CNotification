@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="15dp"
+    tools:targetApi=""
+    android:id="@+id/notice_view_type_0">
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textAppearance="@android:style/TextAppearance.Material.Notification.Title"
+                android:text="校园实时热点"
+                android:layout_centerVertical="true"
+                tools:text="校园实时热点"
+                />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tag_tv"
+                android:textSize="8sp"
+                android:textAppearance="@android:style/TextAppearance.Material.Notification.Time"
+                tools:text="10:23"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/push_close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAppearance="@android:style/TextAppearance.Material.Notification.Line2"
+            tools:text="我浙83.70，挺进CUBA东南赛区啦！"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textAppearance="@android:style/TextAppearance.Material.Notification.Info"
+            tools:text="41个同校小伙伴参与讨论"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"/>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
